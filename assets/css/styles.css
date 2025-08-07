@@ -186,17 +186,19 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 96px;
+    margin-top: 70px;
 }
 
-.clients .images img {
-    padding: 32px 41px 22px 41px;
-
-}
-
-.clients .images img:hover {
+.clients .images a {
+    display: flex;
+    align-items: center;
+    padding: 0 41px;
+    height: 90px;
     border-radius: 12px;
     background: #fff;
+}
+
+.clients .images a:hover {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -685,7 +687,7 @@ a {
 .footer .row:last-child {
     margin: 81px 0 51px;
 }
-.footer .row-bottom{
+.footer .row-bottom {
     justify-content: space-between;
 }
 
