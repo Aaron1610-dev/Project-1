@@ -53,40 +53,41 @@ a {
 }
 
 /* ==== Header === */
-.header {
-    position: relative;
-    height: 100vh;
+.fixed-header {
+    position: sticky;
+    top: -24px;
+    z-index: 1;
+    padding-top: 24px;
     background-color: #e6f0ff;
 }
 
-/* ==== Nav === */
-.navbar {
+.fixed-header .navbar {
     display: flex;
     align-items: center;
-    padding-top: 36px;
+    padding: 12px 0;
 }
 
-.navbar ul {
+.fixed-header .navbar ul {
     display: flex;
     margin-left: 50px;
 }
 
-.navbar ul a {
-    padding: 8px 14px;
+.fixed-header .navbar ul a {
+    padding:     14px;
     color: #4f5361;
     font-size: 1.4rem;
     font-weight: 500;
 }
 
-.navbar ul a:hover {
+.fixed-header .navbar ul a:hover {
     text-decoration: underline;
 }
 
-.navbar .action {
+.fixed-header .navbar .action {
     margin-left: auto;
 }
 
-.navbar .action-link {
+.fixed-header .navbar .action-link {
     margin-right: 18px;
     color: var(--primary-color);
     font-family: Poppins;
@@ -94,22 +95,30 @@ a {
     font-weight: 500;
 }
 
-.navbar .action-btn {
+.fixed-header .navbar .action-btn {
     padding: 13px 10px;
     border-radius: 8px;
 }
 
 /* ==== Hero === */
-.hero {
-    margin-top: 130px;
+.wrap-hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    background-color: #e6f0ff;
 }
 
-.hero .info {
+.wrap-hero .hero {
+    margin-top: 126px;
+}
+
+.wrap-hero .hero .info {
     width: 51%;
     height: 371px;
 }
 
-.hero .sub-title {
+.wrap-hero .hero .sub-title {
     font-family: Poppins;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -118,7 +127,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.wrap-hero .hero .title {
     margin-top: 8px;
     margin-bottom: 30px;
     font-family: Poppins;
@@ -128,7 +137,7 @@ a {
     color: #000336;
 }
 
-.hero .desc {
+.wrap-hero .hero .desc {
     margin-bottom: 40px;
     color: #5a6473;
     font-family: Poppins;
@@ -138,7 +147,7 @@ a {
     text-transform: lowercase;
 }
 
-.hero .desc::first-letter {
+.wrap-hero .hero .desc::first-letter {
     color: #5a6473;
 
     font-family: Poppins;
@@ -148,11 +157,11 @@ a {
     text-transform: capitalize;
 }
 
-.hero-cta {
+.wrap-hero .hero-cta {
     min-width: 170px;
 }
 
-.hero-img {
+.wrap-hero .hero-img {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
