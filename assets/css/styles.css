@@ -107,21 +107,19 @@ a {
 .wrap-hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
     height: calc(100vh - 90px);
     background-color: #e6f0ff;
 }
 
-.wrap-hero .hero {
-    margin-top: 126px;
-}
 
-.wrap-hero .hero .info {
+.wrap-hero .info {
     width: 51%;
     height: 371px;
 }
 
-.wrap-hero .hero .sub-title {
+.wrap-hero .sub-title {
     font-family: Poppins;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -130,7 +128,7 @@ a {
     color: #687690;
 }
 
-.wrap-hero .hero .title {
+.wrap-hero .title {
     margin-top: 8px;
     margin-bottom: 30px;
     font-family: Poppins;
@@ -140,7 +138,7 @@ a {
     color: #000336;
 }
 
-.wrap-hero .hero .desc {
+.wrap-hero .desc {
     margin-bottom: 40px;
     color: #5a6473;
     font-family: Poppins;
@@ -150,7 +148,7 @@ a {
     text-transform: lowercase;
 }
 
-.wrap-hero .hero .desc::first-letter {
+.wrap-hero .desc::first-letter {
     color: #5a6473;
 
     font-family: Poppins;
