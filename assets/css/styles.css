@@ -1,6 +1,4 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
@@ -14,6 +12,11 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 /* ==== Common ==== */
@@ -73,7 +76,7 @@ a {
 }
 
 .fixed-header .navbar ul a {
-    padding:     14px;
+    padding: 14px;
     color: #4f5361;
     font-size: 1.4rem;
     font-weight: 500;
@@ -216,6 +219,8 @@ a {
     margin-top: 40px;
     padding-top: 93px;
     padding-bottom: 79px;
+    scroll-margin-top: 40px;
+
 }
 
 .guides .sub-title {
@@ -311,6 +316,7 @@ a {
     padding-top: 110px;
     padding-bottom: 110px;
     background: #f5fafe;
+    scroll-margin-top: -40px;
 }
 
 .futures .title {
@@ -410,6 +416,7 @@ a {
 .stats {
     margin-top: 75px;
     padding-top: 50px;
+    scroll-margin-top: 60px;
 }
 
 .stats .content {
