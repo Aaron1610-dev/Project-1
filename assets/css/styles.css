@@ -171,7 +171,7 @@ a {
     justify-content: space-between;
 }
 
-.client row .desc {
+.client .row .desc {
     color: #7d8589;
     font-size: 1.6rem;
     font-weight: 500;
@@ -187,6 +187,17 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-top: 96px;
+}
+
+.clients .images img {
+    padding: 32px 41px 22px 41px;
+
+}
+
+.clients .images img:hover {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* ==== Guides === */
@@ -646,7 +657,6 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     white-space: nowrap;
-
 }
 
 .footer .column:last-child .desc {
@@ -674,6 +684,9 @@ a {
 
 .footer .row:last-child {
     margin: 81px 0 51px;
+}
+.footer .row-bottom{
+    justify-content: space-between;
 }
 
 .footer .row:last-child .logo {
